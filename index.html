@@ -8,9 +8,9 @@
 </head>
 <body>
 <!-- Start of first page -->
-<div data-role="page" id="foo">
+<div data-role="page" id="menu" style="height:100%; text-align: center;">
 
-	<div data-role="header">
+	<div data-role="header" data-position="fixed" style="background-color: darkorange">
 		<h1>menu</h1>
 	</div><!-- /header -->
 
@@ -18,14 +18,18 @@
 		<div class="ui-grid-c" style="height:100%; text-align: center;">
 			    <div class="ui-block-a">
 					<div>
+						<a href="#cheese" data-position="pop">
 						<img src="./images/cheese.png" style="width: 80px; margin: 5px 15px 5 px 18px;">
 						<p>Cheese</p>
+						</a>
 					</div>
 				</div>
 			    <div class="ui-block-b">
 					<div>
+						<a href="#hamburger" data-position="flip">
 						<img src="./images/cheeseburger.png" style="width: 80px; margin: 5px 15px 5 px 18px;">
 						<p>Hamburger</p>
+						</a>
 					</div>
 				</div>
 			    <div class="ui-block-c">
@@ -44,8 +48,10 @@
 					</div>
 				    <div class="ui-block-b">
 						<div>
+								<a href="pizza.html" data-position="flip">
 							<img src="./images/pizza_slice.png" style="width: 80px; margin: 5px 15px 5 px 18px;">
 							<p>Pizza</p>
+								</a>
 						</div>
 					</div>
 				    <div class="ui-block-c">
@@ -57,14 +63,58 @@
 				</div><!-- /grid-b -->
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" data-position="fixed">
 		<h4>footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+<!-- Start of second page -->
+<div data-role="page" id="cheese">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Hamburger</h1>
+		<a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content"  style="text-align: center">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<img src="./images/cheese.png" width="70%">
+					<p>cheese</p>
+		<p><a href="#menu">Back to menu</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
-	<div data-role="footer">
+<div data-role="page" id="hamburger">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Hamburger</h1>
+			<a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+		</div><!-- /header -->
+	
+		<div role="main" class="ui-content"  style="text-align: center">
+						<img src="./images/cheeseburger.png" width="70%">
+						<p>Hamburger</p>
+			<p><a href="#menu">Back to menu</a></p>
+		</div><!-- /content -->
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>Page Footer</h4>
+		</div><!-- /footer -->
+	</div><!-- /page -->
+	<div data-role="footer" data-position="fixed">
 		<h4>footer</h4>
 	</div><!-- /footer -->
-</div><!-- /page -->
 </body>
 </html>
