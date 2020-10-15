@@ -8,17 +8,17 @@
 </head>
 <body>
 <!-- Start of first page -->
-<div data-role="page" id="menu" style="height:100%; text-align: center;">
+<div data-role="page" id="pizzamenu" style="height:100%; text-align: center;">
 
     <div data-role="header" data-position="fixed" style="background-color: darkorange">
-        <a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+        <a href="index.html" rel="external" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
 		<h1>menu</h1>
 	</div><!-- /header -->
 
     <div role="main" class="ui-content" style="height:100%; text-align: center;">
         
             <ul data-role="listview" data-inset="true">
-                        <li><a href="#">
+                        <li><a href="#pizza1">
                             <img src="./images/pizza.png">
                     <span class="ui-li-count" style="background-color: red;color:white">$120</span>
                         <h2>Regular Pizza</h2>
@@ -48,6 +48,24 @@
 
 	<div data-role="footer" data-position="fixed">
 		<h4>footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="pizza1">
+
+	<div data-role="header" data-position="fixed">
+		<h1>Hamburger</h1>
+		<a href="#pizzamenu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content"  style="text-align: center">
+					<img src="./images/pizza.png" width="70%">
+					<p>Pizza1</p>
+		<p><a href="#pizzamenu">Back to menu</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 

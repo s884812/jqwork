@@ -4,11 +4,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		a {
+			text-decoration:none;
+		}
+	</style>
+	
 </head>
 <body>
 <!-- Start of first page -->
-<div data-role="page" id="menu" style="height:100%; text-align: center;">
+<div data-role="page" id="mainmenu" style="height:100%; text-align: center;">
 
 	<div data-role="header" data-position="fixed" style="background-color: darkorange">
 		<h1>menu</h1>
@@ -48,7 +54,7 @@
 					</div>
 				    <div class="ui-block-b">
 						<div>
-								<a href="pizza.html" data-position="flip">
+								<a href="pizza.html" rel="external" data-position="flip">
 							<img src="./images/pizza_slice.png" style="width: 80px; margin: 5px 15px 5 px 18px;">
 							<p>Pizza</p>
 								</a>
@@ -72,7 +78,7 @@
 
 	<div data-role="header" data-position="fixed">
 		<h1>Hamburger</h1>
-		<a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+		<a href="#mainmenu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content"  style="text-align: center">
@@ -100,13 +106,13 @@
 
 		<div data-role="header" data-position="fixed">
 			<h1>Hamburger</h1>
-			<a href="#menu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
+			<a href="#mainmenu" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Back</a>
 		</div><!-- /header -->
 	
 		<div role="main" class="ui-content"  style="text-align: center">
 						<img src="./images/cheeseburger.png" width="70%">
 						<p>Hamburger</p>
-			<p><a href="#menu">Back to menu</a></p>
+			<p><a href="#mainmenu">Back to menu</a></p>
 		</div><!-- /content -->
 	
 		<div data-role="footer" data-position="fixed">
